@@ -12,17 +12,18 @@ authors = [{ name = "Michael Poli"}]
 dependencies = [
     "transformers",
     "tokenizers",
-    "flash_attn>=2.0.0"
+    "torch>=2.10.0",
 ]
 
-[tool.black]
-line-length = 119
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+    "black",
+    "isort",
+]
+test = [
+    "pytest>=7.0.0",
+    "pytest-cov>=4.0.0",
+]
 
-[tool.isort]
-profile = "black"
-line_length = 119
-combine_as_imports = true
-combine_star = true
-
-[tool.setuptools]
-packages = ['stripedhyena']
