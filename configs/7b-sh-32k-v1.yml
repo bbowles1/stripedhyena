@@ -41,8 +41,8 @@ final_norm: True
 # 3) FlashDepthwise (FIR): compatible
 # 4) FlashFFTConv (prefill_style=fft and parallel inference): compatible
 # 5) LaughingHyena (decoding): unreleased
-use_flash_attn: True
-use_flash_rmsnorm: True
+use_flash_attn: False
+use_flash_rmsnorm: False
 use_flash_depthwise: False
 use_flashfft: False
 use_laughing_hyena: False
