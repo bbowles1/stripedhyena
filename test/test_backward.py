@@ -4,9 +4,9 @@ import pytest
 import torch
 import torch.nn as nn
 import yaml
-from src.layers import RMSNorm
-from src.model import StripedHyena
-from src.utils import dotdict
+from stripedhyena.layers import RMSNorm
+from stripedhyena.model import StripedHyena
+from stripedhyena.utils import dotdict
 
 
 def test_custom_fftconv_backward_siso(pytestconfig):
