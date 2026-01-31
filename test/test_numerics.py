@@ -33,7 +33,7 @@ def test_batched_norm(pytestconfig):
         "eps": 1e-5,
         "hidden_size": 64,
         "params_dtype": torch.float32,
-        "use_flash_rmsnorm": True,
+        "use_flash_rmsnorm": False,
     }
     device = "cuda" if torch.cuda.is_available() else "cpu"
     config = dotdict(config)
